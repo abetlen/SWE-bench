@@ -34,7 +34,7 @@ setuptools.setup(
         "docker",
         "ghapi",
         "GitPython",
-        "modal",
+        "morphcloud",
         "pre-commit",
         "python-dotenv",
         "requests",

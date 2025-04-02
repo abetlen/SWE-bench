@@ -43,16 +43,16 @@ You *cannot* run evaluation on the `test` split of `princeton-nlp/SWE-bench_Mult
 To encourage less intentional climbing of the leaderboard, we have intentionally made specifications for evaluating the test split private.
 Use [sb-cli](https://github.com/swe-bench/sb-cli/) for SWE-bench Multimodal evaluation.
 
-### 🌩️ Evaluation with Modal
-You can also run evaluations entirely on the cloud using [Modal](https://modal.com/) to avoid local setup and resource constraints:
+### 🌩️ Evaluation with Morph Cloud
+You can also run evaluations entirely on the cloud using [Morph Cloud](https://cloud.morph.so/docs/) to avoid local setup and resource constraints:
 ```bash
 python -m swebench.harness.run_evaluation \
     --predictions_path gold \
-    --run_id validate-gold-modal \
+    --run_id validate-gold-morph \
     --instance_ids sympy__sympy-20590 \
-    --modal true
+    --morph true
 ```
-This will execute the evaluation harness on Modal's cloud infrastructure, eliminating the need for local Docker setup and resource management.
+This will execute the evaluation harness on Morph Cloud's infrastructure, eliminating the need for local Docker setup and resource management.
 
 > [!NOTE]
 > Modal for SWE-bench Multimodal is currently experimental and may not be fully supported yet.
